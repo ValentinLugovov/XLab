@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './style/sideBar.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,16 +9,18 @@ const SideBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="sideBar">
+    <aside className="sideBar">
       <div className="sidebar-header">
         <h3>Меню</h3>
       </div>
       <ul>
         <li>
-          <img src="main.svg" alt="main" />
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-            Главная
-          </NavLink>
+          <div className="linkBox">
+            <img src="main.svg" alt="main" />
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+              Главная
+            </NavLink>
+          </div>
         </li>
         <li>
           <img src="glass.svg" alt="main" />
@@ -56,14 +58,14 @@ const SideBar = () => {
             Настройки
           </NavLink>
           {isOpen && (
-            <ul>
+            <ul className="dropDownBar">
               <li>
                 <img src="profileSetting.svg" alt="main" />
-                Настройки профиля
+                <Link to={''}>Настройки профиля</Link>
               </li>
               <li>
                 <img src="phone.svg" alt="main" />
-                Управление финансами
+                <Link to={''}>Управление финансами</Link>
               </li>
             </ul>
           )}
@@ -75,7 +77,7 @@ const SideBar = () => {
           </NavLink>
         </li>
       </ul>
-    </div>
+    </aside>
   );
 };
 
