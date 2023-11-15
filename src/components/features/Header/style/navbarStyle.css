@@ -1,0 +1,30 @@
+nav {
+  height: 80px;
+  display: flex;
+  position: sticky;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(79, 39, 191, 1);
+}
+
+.leftContent {
+  width: 50%;
+  display: flex;
+}
+.rightContent {
+  width: 50%;
+  display: flex;
+
+}
+
+.textLogo {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}

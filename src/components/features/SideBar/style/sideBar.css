@@ -1,0 +1,16 @@
+.sideBar {
+  width: 300px;
+  height: 100vh;
+  padding: 20px;
+  border: 1px solid black;
+  float: left;
+ }
+ 
+ .sideBar ul {
+  list-style-type: none;
+  padding: 0;
+ }
+ 
+ .sideBar ul li a {
+  text-decoration: none;
+ }
