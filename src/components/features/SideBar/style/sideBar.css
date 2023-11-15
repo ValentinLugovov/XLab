@@ -4,13 +4,17 @@
   padding: 20px;
   border: 1px solid black;
   float: left;
- }
- 
- .sideBar ul {
+}
+
+.sideBar ul {
   list-style-type: none;
   padding: 0;
- }
- 
- .sideBar ul li a {
+}
+
+.sideBar ul li a {
   text-decoration: none;
- }
+}
+
+.active {
+  border-right: 6px solid rgba(79, 39, 191, 1);
+}
