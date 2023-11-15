@@ -24,7 +24,7 @@ const SideBar = () => {
         </li>
         <li>
           <img src="glass.svg" alt="main" />
-          <NavLink to="/find" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
+          <NavLink to="/address" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
             Поиск адресов
           </NavLink>
         </li>

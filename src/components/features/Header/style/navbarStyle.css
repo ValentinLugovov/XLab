@@ -16,11 +16,9 @@ nav {
 .rightContent {
   width: 50%;
   display: flex;
-
 }
 
 .textLogo {
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
