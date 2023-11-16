@@ -1,10 +1,7 @@
-nav {
+.navbar {
   height: 10vh;
   display: flex;
   position: sticky;
-}
-
-.navbar {
   width: 100%;
   background-color: rgba(79, 39, 191, 1);
 }

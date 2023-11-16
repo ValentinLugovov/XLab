@@ -1,10 +1,10 @@
-import './style/newsPage.css';
+import styles from './style/newsPage.module.css';
 
 const NewsPage = () => {
   return (
     <article>
       <h1>Новости</h1>
-      <div className="news">
+      <div className={styles.news}>
         <h4>Обновление CRM до 1.2</h4>
         <br />
         <p>
