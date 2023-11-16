@@ -46,7 +46,7 @@ const SideBar = () => {
         </li>
         <li>
           <NavLink to="/maps" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>
-            <img src="markup.svg" alt="main" />
+            <img src="markup.svg" alt="main" style={{marginRight: '25px'}} />
             Карты
           </NavLink>
         </li>
