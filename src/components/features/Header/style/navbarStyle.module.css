@@ -1,21 +1,27 @@
-nav {
+.navbar {
   height: 10vh;
   display: flex;
   position: sticky;
-}
-
-.navbar {
   width: 100%;
   background-color: rgba(79, 39, 191, 1);
 }
 
-.leftContent {
-  width: 50%;
+.leftContent,
+.rightContent {
   display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.leftContent {
+  justify-content: flex-start;
+  gap: 24px;
+  margin-left: 32px;
 }
 .rightContent {
-  width: 50%;
-  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-right: 32px;
 }
 
 .textLogo {
